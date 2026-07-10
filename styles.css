@@ -628,13 +628,84 @@ button:focus-visible {
   font-size: 0.92rem;
 }
 
+.engagements {
+  background: var(--paper);
+}
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+  border-left: 2px solid var(--ink);
+}
+
+.engagement-card {
+  display: flex;
+  min-height: 480px;
+  flex-direction: column;
+  padding: clamp(28px, 4.5vw, 48px);
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  background: var(--surface);
+}
+
+.engagement-card:nth-child(2) {
+  background: var(--accent);
+}
+
+.engagement-label {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.engagement-card h3 {
+  max-width: 620px;
+  margin: 0 0 24px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 880;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.engagement-card > p:not(.engagement-label) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.engagement-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.engagement-card li {
+  padding-top: 10px;
+  border-top: 1px solid var(--ink);
+  font-size: 0.9rem;
+  font-weight: 720;
+}
+
+.engagement-link {
+  margin-top: auto;
+  padding-top: 34px;
+  font-weight: 830;
+}
+
 .section-resumes {
   background: var(--surface);
 }
 
 .resume-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 2px solid var(--ink);
   border-left: 2px solid var(--ink);
 }
@@ -822,8 +893,16 @@ button:focus-visible {
   }
 
   .case-grid,
-  .resume-grid {
+  .engagement-grid {
     grid-template-columns: 1fr;
+  }
+
+  .resume-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .engagement-card {
+    min-height: 400px;
   }
 
   .resume-card {
@@ -866,6 +945,10 @@ button:focus-visible {
     justify-content: flex-start;
     gap: 4px 15px;
     font-size: 0.75rem;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero {
