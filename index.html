@@ -79,6 +79,7 @@
         <nav class="primary-nav" aria-label="Primary navigation">
           <a href="#work">Selected work</a>
           <a href="#case-studies">Case studies</a>
+          <a href="#engagements">Contract work</a>
           <a href="#resumes">Resumes</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -313,12 +314,54 @@
         </div>
       </section>
 
+      <section class="section engagements" id="engagements" aria-labelledby="engagements-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow"><span aria-hidden="true">05</span> Focused contract work</p>
+            <h2 id="engagements-title">Start with one bounded outcome.</h2>
+            <p>
+              I take narrowly scoped Rust and Go engagements where correctness, recovery, and production behavior matter. The first milestone is small enough to evaluate before committing to a larger build.
+            </p>
+          </div>
+
+          <div class="engagement-grid">
+            <article class="engagement-card">
+              <p class="engagement-label">One-day diagnostic</p>
+              <h3>Rust trading execution &amp; reconciliation</h3>
+              <p>
+                Diagnose partial-fill handling, cancel/replace races, local-versus-exchange state drift, reduce-only hazards, and incidents that resist reproduction.
+              </p>
+              <ul>
+                <li>Failure-path and state-transition map</li>
+                <li>Minimal reproduction or deterministic test where feasible</li>
+                <li>Prioritized risks and a concrete patch plan</li>
+              </ul>
+              <a class="engagement-link" href="mailto:kfastov@gmail.com?subject=Rust%20trading%20diagnostic">Discuss a diagnostic <span aria-hidden="true">&#8599;</span></a>
+            </article>
+
+            <article class="engagement-card">
+              <p class="engagement-label">Two-to-four-day sprint</p>
+              <h3>Exchange, RPC &amp; indexer reliability</h3>
+              <p>
+                Deliver one testable milestone around an exchange connector, Solana/EVM RPC path, lagging indexer, restart/backfill behavior, or data-pipeline correctness.
+              </p>
+              <ul>
+                <li>Bounded Rust or Go implementation</li>
+                <li>Focused regression coverage</li>
+                <li>Replay, recovery, and operational handoff notes</li>
+              </ul>
+              <a class="engagement-link" href="mailto:kfastov@gmail.com?subject=Rust%20or%20Go%20reliability%20sprint">Scope a sprint <span aria-hidden="true">&#8599;</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-resumes" id="resumes" aria-labelledby="resumes-title">
         <div class="shell">
           <div class="section-heading">
-            <p class="eyebrow"><span aria-hidden="true">05</span> Role-specific resumes</p>
+            <p class="eyebrow"><span aria-hidden="true">06</span> Role-specific resumes</p>
             <h2 id="resumes-title">Start with the closest version.</h2>
-            <p>Each resume is a concise, two-page PDF. The underlying career history is consistent; emphasis changes by role.</p>
+            <p>Eight reviewed, two-page PDFs share one factual career history; only the role emphasis and ordering change.</p>
           </div>
 
           <div class="resume-grid">
@@ -333,9 +376,59 @@
             </article>
 
             <article class="resume-card">
-              <p class="resume-track">Backend / data</p>
+              <p class="resume-track">Solana / protocol</p>
+              <h3>Solana &amp; MEV</h3>
+              <p>For Solana backend, transaction infrastructure, Jito, Jupiter, RPC, and protocol-integration roles.</p>
+              <div class="resume-actions">
+                <a href="/assets/resumes/konstantin-fastov-solana-mev.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-solana-mev.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resume-card">
+              <p class="resume-track">Arbitrage / MEV</p>
+              <h3>Crypto Arbitrage</h3>
+              <p>For explicit arbitrage and MEV mandates spanning execution, market data, Solana, and exchange infrastructure.</p>
+              <div class="resume-actions">
+                <a href="/assets/resumes/konstantin-fastov-crypto-arbitrage-mev.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-crypto-arbitrage-mev.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resume-card">
+              <p class="resume-track">Connectivity</p>
+              <h3>Exchange &amp; DEX Integrations</h3>
+              <p>For venue adapters, order and account lifecycles, market-data connectivity, or DEX integration work.</p>
+              <div class="resume-actions">
+                <a href="/assets/resumes/konstantin-fastov-exchange-dex-integrations.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-exchange-dex-integrations.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resume-card">
+              <p class="resume-track">Data pipelines</p>
+              <h3>Blockchain Indexing &amp; Data</h3>
+              <p>For ingestion, parsing, indexing, recovery, persistence, and blockchain-data pipeline roles.</p>
+              <div class="resume-actions">
+                <a href="/assets/resumes/konstantin-fastov-blockchain-indexing-data.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-blockchain-indexing-data.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resume-card">
+              <p class="resume-track">Protocol / infrastructure</p>
+              <h3>Blockchain Infrastructure</h3>
+              <p>For multi-chain backend, RPC, nodes, protocol integrations, and production infrastructure roles.</p>
+              <div class="resume-actions">
+                <a href="/assets/resumes/konstantin-fastov-blockchain-infrastructure.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-blockchain-infrastructure.pdf" download>Download</a>
+              </div>
+            </article>
+
+            <article class="resume-card">
+              <p class="resume-track">Go / Web3 API</p>
               <h3>Go &amp; Blockchain Data</h3>
-              <p>For Go backend, blockchain API, indexing, data-pipeline, and infrastructure roles.</p>
+              <p>For Go-primary blockchain APIs, indexing services, distributed backends, and data infrastructure.</p>
               <div class="resume-actions">
                 <a href="/assets/resumes/konstantin-fastov-go-blockchain-data.pdf">Open PDF</a>
                 <a href="/assets/resumes/konstantin-fastov-go-blockchain-data.pdf" download>Download</a>
@@ -343,12 +436,12 @@
             </article>
 
             <article class="resume-card">
-              <p class="resume-track">Protocol / infra</p>
-              <h3>Solana &amp; MEV</h3>
-              <p>For Solana backend, transaction infrastructure, MEV, RPC, and protocol-integration roles.</p>
+              <p class="resume-track">Brokerage / forex</p>
+              <h3>Trading Systems &amp; Forex</h3>
+              <p>For brokerage, forex, MetaTrader, WebTrader, and non-blockchain trading-system roles.</p>
               <div class="resume-actions">
-                <a href="/assets/resumes/konstantin-fastov-solana-mev.pdf">Open PDF</a>
-                <a href="/assets/resumes/konstantin-fastov-solana-mev.pdf" download>Download</a>
+                <a href="/assets/resumes/konstantin-fastov-trading-systems-forex.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-trading-systems-forex.pdf" download>Download</a>
               </div>
             </article>
           </div>
@@ -358,10 +451,10 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="shell contact-layout">
           <div>
-            <p class="eyebrow light-eyebrow"><span aria-hidden="true">06</span> Contact</p>
+            <p class="eyebrow light-eyebrow"><span aria-hidden="true">07</span> Contact</p>
             <h2 id="contact-title">Have a hard backend problem?</h2>
             <p>
-              I am open to senior remote roles and focused contract work in trading systems, Rust/Go backend engineering, and blockchain data infrastructure.
+              I am open to senior remote roles, paid diagnostics, and focused contract work in trading systems, Rust/Go backend engineering, and blockchain data infrastructure.
             </p>
           </div>
           <ul class="contact-list">
