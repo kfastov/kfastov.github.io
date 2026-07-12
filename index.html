@@ -6,7 +6,7 @@
     <title>Konstantin Fastov — Senior Rust/Go Backend Engineer</title>
     <meta
       name="description"
-      content="Senior Rust and Go backend engineer building trading systems, exchange integrations, and blockchain data infrastructure. Based in Moscow, UTC+3; open to remote roles and contract work."
+      content="Senior Rust and Go backend engineer building trading systems, exchange integrations, and blockchain data infrastructure. UTC+3; open to global remote roles and contract work."
     >
     <meta name="author" content="Konstantin Fastov">
     <meta name="robots" content="index, follow">
@@ -21,7 +21,7 @@
     <meta property="og:title" content="Konstantin Fastov — Senior Rust/Go Backend Engineer">
     <meta
       property="og:description"
-      content="Trading systems, exchange integrations, and blockchain data infrastructure. Moscow · UTC+3 · Remote and contract."
+      content="Trading systems, exchange integrations, and blockchain data infrastructure. UTC+3 · Global remote and contract."
     >
     <meta property="og:url" content="https://kfastov.github.io/">
     <meta property="og:image" content="https://kfastov.github.io/assets/og-card.png">
@@ -46,11 +46,7 @@
         "url": "https://kfastov.github.io/",
         "email": "mailto:kfastov@gmail.com",
         "jobTitle": "Senior Rust/Go Backend Engineer",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Moscow",
-          "addressCountry": "RU"
-        },
+        "description": "Senior Rust/Go backend engineer in UTC+3, open to global remote roles and contract work.",
         "sameAs": [
           "https://github.com/kfastov",
           "https://www.linkedin.com/in/kfastov",
@@ -98,7 +94,6 @@
             I build trading systems, exchange integrations, and blockchain data infrastructure—with an emphasis on explicit state, reliable recovery, and production operability.
           </p>
           <ul class="availability" aria-label="Location and availability">
-            <li>Moscow</li>
             <li>UTC+3</li>
             <li>Open to global remote roles</li>
             <li>Available for focused contract work</li>
@@ -213,11 +208,12 @@
                 <span class="relationship">Merged upstream</span>
                 <span aria-hidden="true">05</span>
               </div>
-              <h3><a href="https://github.com/foundry-rs/starknet-foundry/pull/2612">Starknet Foundry multicall inputs</a></h3>
+              <h3><a href="https://github.com/starknet-io/starknet.js/pull/1111">Starknet SDK and Foundry tooling</a></h3>
               <p class="card-summary">
-                Added typed numeric multicall inputs with parser changes, tests, documentation, changelog updates, and explicit input constraints.
+                Implemented merged SNIP-9 outside-execution support in starknet.js across account APIs, dual-version hashing, tests, and documentation; separately added typed numeric multicall inputs to Starknet Foundry with parser changes, tests, documentation, and explicit constraints.
               </p>
               <div class="card-links">
+                <a href="https://github.com/starknet-io/starknet.js/pull/1111">starknet.js PR #1111 <span aria-hidden="true">↗</span></a>
                 <a href="https://github.com/foundry-rs/starknet-foundry/pull/2612">Pull request #2612 <span aria-hidden="true">↗</span></a>
               </div>
             </article>
@@ -243,7 +239,7 @@
                 I designed, implemented, and operated a Rust funding-rate arbitrage system spanning exchange connectivity, streaming market data, state-machine-based order execution, position reconciliation, and deterministic backtesting.
               </p>
               <p>
-                Historical live execution ran on Binance USD-M and Hyperliquid from February to May 2026. It is currently paused while I rebuild the system from first principles as a strategy-agnostic engine with typed domain boundaries, capability-based connectors, and shared deterministic semantics for live and simulated execution.
+                Historical live execution covered 28 perpetual symbols on Binance USD-M and Hyperliquid from February to May 2026, including a sustained operating window of about two weeks. It is currently paused while I rebuild the system from first principles as a strategy-agnostic engine with typed domain boundaries, capability-based connectors, and shared deterministic semantics for live and simulated execution.
               </p>
               <div class="case-note">
                 <strong>Current status:</strong> the successor has foundational domain and connector work in place, but remains an early implementation—not a finished trading engine.
@@ -267,7 +263,7 @@
                 I worked on Ankr Advanced API, a blockchain-data platform spanning 13+ EVM networks and Solana. That number describes platform context; my contribution was concentrated in Go services for indexing, public APIs, RPC routing, and node access.
               </p>
               <p>
-                My work included JSON-RPC and gRPC boundaries, token and balance indexing, DEX-liquidity price routing, Geth/Erigon transaction tracing, node selection, request-path parallelization, and application deployment tooling.
+                My work included JSON-RPC and gRPC boundaries, token and balance indexing, DEX-liquidity price routing, internal-transaction indexing across heterogeneous EVM node APIs, capability-aware node selection, request-path parallelization, and application deployment tooling.
               </p>
               <div class="case-note">
                 <strong>Disclosure boundary:</strong> production repositories are not public. This summary contains no private code, schemas, endpoints, customer data, or internal screenshots.
@@ -304,7 +300,7 @@
             </article>
             <article>
               <h3>Data</h3>
-              <p>PostgreSQL, FoundationDB, ClickHouse, Redis, gRPC, Protocol Buffers, JSON-RPC, append-only pipelines.</p>
+              <p>PostgreSQL, FoundationDB, Redis, gRPC, Protocol Buffers, JSON-RPC, append-only pipelines.</p>
             </article>
             <article>
               <h3>Blockchain</h3>
@@ -336,7 +332,10 @@
                 <li>Minimal reproduction or deterministic test where feasible</li>
                 <li>Prioritized risks and a concrete patch plan</li>
               </ul>
-              <a class="engagement-link" href="mailto:kfastov@gmail.com?subject=Rust%20trading%20diagnostic">Discuss a diagnostic <span aria-hidden="true">&#8599;</span></a>
+              <div class="engagement-actions">
+                <a class="engagement-link" href="/assets/samples/rust-trading-execution-diagnostic-sample.pdf">View synthetic sample <span aria-hidden="true">&#8599;</span></a>
+                <a class="engagement-link" href="mailto:kfastov@gmail.com?subject=Rust%20trading%20diagnostic">Discuss a diagnostic <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </article>
 
             <article class="engagement-card">
@@ -350,7 +349,9 @@
                 <li>Focused regression coverage</li>
                 <li>Replay, recovery, and operational handoff notes</li>
               </ul>
-              <a class="engagement-link" href="mailto:kfastov@gmail.com?subject=Rust%20or%20Go%20reliability%20sprint">Scope a sprint <span aria-hidden="true">&#8599;</span></a>
+              <div class="engagement-actions">
+                <a class="engagement-link" href="mailto:kfastov@gmail.com?subject=Rust%20or%20Go%20reliability%20sprint">Scope a sprint <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </article>
           </div>
         </div>
@@ -359,12 +360,22 @@
       <section class="section section-resumes" id="resumes" aria-labelledby="resumes-title">
         <div class="shell">
           <div class="section-heading">
-            <p class="eyebrow"><span aria-hidden="true">06</span> Role-specific resumes</p>
+            <p class="eyebrow"><span aria-hidden="true">06</span> Master and role-specific resumes</p>
             <h2 id="resumes-title">Start with the closest version.</h2>
-            <p>Eight reviewed, two-page PDFs share one factual career history; only the role emphasis and ordering change.</p>
+            <p>Nine two-page PDFs draw from the same career history: one broad master resume and eight role-specific versions with different emphasis and ordering.</p>
           </div>
 
           <div class="resume-grid">
+            <article class="resume-card master-resume">
+              <p class="resume-track">Master / mixed backend</p>
+              <h3>Senior Backend Engineer</h3>
+              <p>For mixed Rust, Go, blockchain, trading, and infrastructure roles that need a broader view of the same career history.</p>
+              <div class="resume-actions">
+                <a href="/assets/resumes/konstantin-fastov-master.pdf">Open PDF</a>
+                <a href="/assets/resumes/konstantin-fastov-master.pdf" download>Download</a>
+              </div>
+            </article>
+
             <article class="resume-card primary-resume">
               <p class="resume-track">Primary</p>
               <h3>Rust &amp; Trading Systems</h3>
@@ -470,7 +481,7 @@
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p>© 2026 Konstantin Fastov</p>
-        <p>Moscow · UTC+3 · Built as plain HTML and CSS</p>
+        <p>UTC+3 · Global remote / contract · Built as plain HTML and CSS</p>
       </div>
     </footer>
   </body>
