@@ -15,7 +15,8 @@ Then open `http://localhost:8000`.
 - `index.html` — semantic single-page portfolio
 - `styles.css` — responsive layout and visual system
 - `404.html` — GitHub Pages fallback
-- `assets/resumes/` — reviewed role-specific PDF resumes
+- `assets/resumes/` — approved master and role-specific PDF resumes
+- `assets/samples/` — public-safe sample deliverables for focused contract work
 - `assets/favicon.svg`, `assets/og-card.svg`, and `assets/og-card.png` — local identity and social-preview assets
 - `robots.txt`, `sitemap.xml`, `site.webmanifest` — discovery metadata
 

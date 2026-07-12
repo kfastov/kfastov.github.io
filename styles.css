@@ -693,9 +693,15 @@ button:focus-visible {
   font-weight: 720;
 }
 
-.engagement-link {
+.engagement-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
   margin-top: auto;
   padding-top: 34px;
+}
+
+.engagement-link {
   font-weight: 830;
 }
 
@@ -718,6 +724,11 @@ button:focus-visible {
   border-right: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
   background: var(--paper);
+}
+
+.master-resume {
+  grid-column: 1 / -1;
+  min-height: 240px;
 }
 
 .primary-resume {
